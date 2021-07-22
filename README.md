@@ -31,3 +31,9 @@ Functions :
 Project SDK : 1.8.0_211
 Project language level: 8
 These are tested values and work for me, I had a lot of issues with this since... Java...
+
+## Setting up the database
+
+1. Go to src/utils/Constants
+2. Fill in the fields as shown in the file
+3. Compile and run :)
