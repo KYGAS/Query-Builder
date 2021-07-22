@@ -21,8 +21,7 @@ Functions :
 *Example*
 
 - > var a = new Query("job_history").Select("employee_id")
-- > var b = new Query("jobs").Select("job_title","prosecnaPlata").Avg("salary","prosecnaPlata").GroupBy("job_title").Join("jobs").On("jobs.job_id","=","employees.job_id")
-- > .WhereInQ("employee_id", a)
+- > var b = new Query("jobs").Select("job_title","prosecnaPlata").Avg("salary","prosecnaPlata").GroupBy("job_title").Join("jobs").On("jobs.job_id","=","employees.job_id").WhereInQ("employee_id", a)
  
  Equivalent
 > select job_title, avg(salary) as “prosecnaPlata” from jobs join employees using (job_id) where employee_id in (select employee_id from job_history) group by job_title
