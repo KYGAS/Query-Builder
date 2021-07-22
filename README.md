@@ -9,14 +9,14 @@ You will get 2 *boxes* and a button.
 In the upper box simply add the query you want to have compiled.
 
 Functions :
-Queried table: new Query(table_name), equivalent SELECT * FROM [table_name]
-Projection: .select(column_list)
-Sorting: .OrderBy(column_list), .OrderByDesc(column_list)
-Filtering: .Where(column_name, operator, criteria), .OrWhere(column_name, operator, criteria), .AndWhere(column_name, operator, criteria), .WhereBetween(column_name, int1, int2), .WhereIn(column_name).ParametarList(p1,p2,p3,p4, …, pn)
-Table merging: .Join(table_name).On(column_name1, operator, column_name2)
-String Operations: .WhereEndsWith(column_name, pattern),  .WhereStartsWith(column_name, pattern),  .WhereContains(column_name, pattern)
-Agregation functions: .Avg(column_name, alias), .Count(column_name, alias), .Min(column_name,alias), .Max(column_name, alias), .GroupBy(column_list), .Having(alias, operator, criteria, ), .AndHaving(alias, operator, criteria), .OrHaving(alias, operator, criteria).
-Subqueries: .WhereInQ(column_name, query)., .WhereEqQ(column_name, query)
+- Queried table: new Query(table_name), equivalent SELECT * FROM [table_name]
+- Projection: .select(column_list)
+- Sorting: .OrderBy(column_list), .OrderByDesc(column_list)
+- Filtering: .Where(column_name, operator, criteria), .OrWhere(column_name, operator, criteria), .AndWhere(column_name, operator, criteria), .WhereBetween(column_name, int1, int2), .WhereIn(column_name).ParametarList(p1,p2,p3,p4, …, pn)
+- Table merging: .Join(table_name).On(column_name1, operator, column_name2)
+- String Operations: .WhereEndsWith(column_name, pattern),  .WhereStartsWith(column_name, pattern),  .WhereContains(column_name, pattern)
+- Agregation functions: .Avg(column_name, alias), .Count(column_name, alias), .Min(column_name,alias), .Max(column_name, alias), .GroupBy(column_list), .Having(alias, operator, criteria, ), .AndHaving(alias, operator, criteria), .OrHaving(alias, operator, criteria).
+- Subqueries: .WhereInQ(column_name, query)., .WhereEqQ(column_name, query)
 
 *Example*
 
